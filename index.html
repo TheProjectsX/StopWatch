@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Stop Watch</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Stop Watch Extrime!</h1>
+        <div class="watchContainer">
+            <div class="watch">
+                <p id="hour">00</p>
+                <p id="minute">00</p>
+                <p id="second">00</p>
+                <p id="miliSecond">00</p>
+            </div>
+            <div class="options">
+                <div>
+                    <button id="startWatch">Start</button>
+                    <button id="pauseWatch" class="disabled" disabled>Pause</button>
+                </div>
+                <div>
+                    <button id="resetWatch" class="disabled" disabled>Reset</button>
+                    <button id="recordTime" class="disabled" disabled>Record</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="recordContainer">
+        <!-- <div class="record">
+            <p class="recordedTime">00 : 00 : 00 : 00</p>
+            <button class="deleteRecord">Delete</button>
+        </div> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: fit-content;
+    min-width: 300px;
+    background-color: #40ffff;
+    border-radius: 8px;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 400px){
+    .container{
+        padding-inline: 10px;
+    }
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.watch{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 10px 0 30px;
+
+}
+
+.watch p{
+    font-size: 30px;
+    text-align: center;
+    width: 70px;
+    margin-block: 10px;
+    border-right: 2px solid gray;
+}
+
+.watch p:last-child{
+    border: none;
+}
+
+.options{
+    margin-block: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.options div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.options div button{
+    width: 130px;
+    padding-block: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+}
+
+
+.options div button:hover{
+    cursor: pointer;
+    /* border-color: #0065c4;
+    color: black;
+    background-color: #0dffff; */
+}
+
+.options div button:active{
+    color: white;
+    background-color: dodgerblue;
+    border-color: white;
+}
+
+.options .disabled{
+    color: gray;
+    border-color: gray;
+}
+
+.options .disabled:hover{
+    cursor: not-allowed;
+}
+
+.options .disabled:active{
+    background-color: white;
+    color: gray;
+    border-color: gray;
+}
+
+
+.recordContainer{
+    margin-top: 10px;
+}
+
+.record{
+    background-color: white;
+    width: 250px;
+    margin-block: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recordedTime{
+    font-size: 20px;
+}
+
+.deleteRecord{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.deleteRecord:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.deleteRecord:active{
+    background-color: black;
+    color: white;
+    border-color: dodgerblue;
+}

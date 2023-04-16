@@ -13,6 +13,13 @@ body{
     align-items: center;
 }
 
+@media (width < 450px){
+    body{
+       justify-content: flex-start;
+       padding-top: 10%;
+    }
+}
+
 .container{
     width: fit-content;
     min-width: 300px;

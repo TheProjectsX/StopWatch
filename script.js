@@ -104,7 +104,9 @@ resetWatch.addEventListener("click", () => {
 
 // Record time
 recordTime.addEventListener("click", () => {
-    document.querySelector(".container").style.marginTop = "50px";
+    if (window.screen.width > 450){
+        document.querySelector(".container").style.marginTop = "50px";
+    }
 
     recordContainer.innerHTML += `<div class="record">
     <p class="recordedTime">${hour.innerText} : ${minute.innerText} : ${second.innerText} : ${miliSecond.innerText}</p>
